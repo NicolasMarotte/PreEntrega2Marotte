@@ -7,6 +7,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 /* MENU BARRA */
 
@@ -47,7 +48,26 @@ main{
     padding: 10px;
 }
 
-/* MAIN */
+@media screen and (max-width: 1070px) {
+
+    .menu{
+        display: flex;
+        justify-content: center;
+    }
+    .menu-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+}
+
+
+
+            /* MAIN */
+
+
 
 .contenedor{
     width: 100%;
@@ -80,8 +100,8 @@ main{
 
 .texto-presentacion{
     color: #f0f8ff;
-    font-size: 1.2rem;
-    padding-left: 2rem;
+    font-size: 1.1rem;
+    padding-left: 32px;
 }
 
 /* CARD HAYAO MIYASAKI */
@@ -107,16 +127,17 @@ main{
 .texto-hayao{
     color: #f0f8ff;
     padding-left: 5rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 /* CARD CLASICOS */
 
 .clasicos{
-    grid-column: 3/14;
-    grid-row: 42/64;
-    background-color: #05a3ea;
+    grid-column: 5/13;
+    grid-row: 43/62;
 }
+
+
 /* FOOTER */
 
 .contacto{
@@ -128,10 +149,13 @@ main{
 .texto-contacto{
     color: #f0f8ff;
     text-decoration: none;
-    
 }
 
+
+
                 /* PELICULAS */
+
+
 
 /* CARDS PELICULAS */
 
@@ -171,45 +195,6 @@ main{
     font-family: 'Libre Baskerville', serif;
 }
 
-.boton-castillo{
-    margin: 20px;
-}
-
-.boton-totoro{
-    margin-left: 20px;
-    margin-top: 36px;
-}
-
-.boton-chihiro{
-    margin: 20px;
-}
-
-.boton-ponyo{
-    margin: 20px;
-}
-
-.boton-luciernagas{
-    margin: 20px;
-}
-
-.boton-mononoke{
-    margin-left: 20px;
-    margin-top: 36px;
-}
-
-.boton-kiki{
-    margin-left: 20px;
-    margin-top: 36px;
-}
-
-.boton-gato{
-    margin-left: 20px;
-    margin-top: 36px;
-}
-
-.boton-porco{
-    margin: 20px;
-}
 /* GRID PELICULAS */
 
 .contenedor-peliculas{
@@ -265,7 +250,114 @@ main{
     grid-row: 12/16;
 }
 
+@media screen and (max-width:1000px) {
+
+    .contenedor-peliculas{
+        height: 300vh;
+    }
+        
+    .castillo{
+        grid-column: 2/8;
+        grid-row: 2/5;
+    }
+    
+    .totoro{
+        grid-column: 10/16;
+        grid-row: 2/5;
+    }
+    
+    .chihiro{
+        grid-column: 2/8;
+        grid-row: 6/10;
+    }
+    
+    .ponyo{
+        grid-column: 10/16;
+        grid-row: 6/10;
+    }
+    
+    .luciernagas{
+        grid-column: 2/8;
+        grid-row: 11/15;
+    }
+    
+    .mononoke{
+        grid-column: 10/16;
+        grid-row: 11/15;
+    }
+    
+    .kiki{
+        grid-column: 2/8;
+        grid-row: 16/18;
+    }
+    
+    .gato{
+        grid-column: 10/16;
+        grid-row: 16/19;
+    }
+    
+    .porco{
+        grid-column: 2/8;
+        grid-row: 16/19;
+    }
+}
+@media screen and (max-width:750px){
+    .contenedor-peliculas{
+        height: 750vh;
+        grid-template-rows: repeat(36,1fr) ;
+    }
+        
+    .castillo{
+        grid-column: 2/16;
+        grid-row: 2/5;
+    }
+    
+    .totoro{
+        grid-column: 2/16;
+        grid-row: 6/9;
+    }
+    
+    .chihiro{
+        grid-column: 2/16;
+        grid-row: 10/13;
+    }
+    
+    .ponyo{
+        grid-column: 2/16;
+        grid-row: 14/17;
+    }
+    
+    .luciernagas{
+        grid-column: 2/16;
+        grid-row: 18/21;
+    }
+    
+    .mononoke{
+        grid-column: 2/16;
+        grid-row: 22/25;
+    }
+    
+    .kiki{
+        grid-column: 2/16;
+        grid-row: 26/29;
+    }
+    
+    .gato{
+        grid-column: 2/16;
+        grid-row: 30/33;
+    }
+    
+    .porco{
+        grid-column: 2/16;
+        grid-row: 34/37;
+    }
+}
+
+
+
                 /* CONOCE MAS */
+
+
 
 .contenedor-conoce-mas{
     width: 100%;
@@ -309,9 +401,31 @@ main{
     font-size: 1.3rem;
 }
 
+
+
                 /* GALERIA */
 
-                /* TIENDA */
+
+
+.galeria-img{
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    gap: 0.5%;
+}
+
+.column{
+    flex: 25%;
+    gap: 0.5%;
+}
+
+
+
+                /* TIENDA */            
+
+
 
 .contenedor-tienda{
     width: 100%;
@@ -323,6 +437,10 @@ main{
 
 .productos{
     background-color: #05a3ea;
+}
+
+.producto-imagen{
+    width: 100%;
 }
 
 .nombre-producto{
@@ -344,59 +462,195 @@ main{
 
 .producto1{
     grid-column: 2/5;
-    grid-row: 2/5;
+    grid-row: 2/6;
 }
 
 .producto2{
     grid-column: 6/9;
-    grid-row: 2/5;
+    grid-row: 2/6;
 }
 
 .producto3{
     grid-column: 10/13;
-    grid-row: 2/5;
+    grid-row: 2/6;
 }
 
 .producto4{
     grid-column: 14/17;
-    grid-row: 2/5;
+    grid-row: 2/6;
 }
 .producto5{
     grid-column: 2/5;
-    grid-row: 6/9;
+    grid-row: 7/11;
 }
 
 .producto6{
     grid-column: 6/9;
-    grid-row: 6/9;
+    grid-row: 7/11;
 }
 
 .producto7{
     grid-column: 10/13;
-    grid-row: 6/9;
+    grid-row: 7/11;
 }
 
 .producto8{
     grid-column: 14/17;
-    grid-row: 6/9;
+    grid-row: 7/11;
 }
 
 .producto9{
     grid-column: 2/5;
-    grid-row: 10/13;
+    grid-row: 12/16;
 }
 
 .producto10{
     grid-column: 6/9;
-    grid-row: 10/13;
+    grid-row: 12/16;
 }
 
 .producto11{
     grid-column: 10/13;
-    grid-row: 10/13;
+    grid-row: 12/16;
 }
 
 .producto12{
     grid-column: 14/17;
-    grid-row: 10/13;
+    grid-row: 12/16;
 }
+
+@media screen and (max-width:1070px) {
+
+    .producto1{
+        grid-column: 2/6;
+        grid-row: 2/6;
+    }
+    
+    .producto2{
+        grid-column: 7/11;
+        grid-row: 2/6;
+    }
+    
+    .producto3{
+        grid-column: 12/16;
+        grid-row: 2/6;
+    }
+    
+    .producto4{
+        grid-column: 2/6;
+        grid-row: 7/10;
+    }
+    .producto5{
+        grid-column: 7/11;
+        grid-row: 7/10;
+    }
+    
+    .producto6{
+        grid-column: 12/16;
+        grid-row: 7/11;
+    }
+    
+    .producto7{
+        grid-column: 2/6;
+        grid-row: 7/11;
+    }
+    
+    .producto8{
+        grid-column: 7/11;
+        grid-row: 7/11;
+    }
+    
+    .producto9{
+        grid-column: 12/16;
+        grid-row: 12/16;
+    }
+    
+    .producto10{
+        grid-column: 2/6;
+        grid-row: 12/16;
+    }
+    
+    .producto11{
+        grid-column: 7/11;
+        grid-row: 12/16;
+    }
+    
+    .producto12{
+        grid-column: 12/16;
+        grid-row: 12/16;
+    }
+}
+    @media screen and (max-width:700px){
+        
+        .contenedor-tienda{
+            grid-template-columns: repeat(17,1fr);
+            grid-template-rows: repeat(64,1fr);
+            height:1400vh;
+        }
+
+        .producto1{
+            grid-column: 2/17;
+            grid-row: 2/6;
+        }
+        
+        .producto2{
+            grid-column: 2/17;
+            grid-row: 7/11;
+        }
+        
+        .producto3{
+            grid-column: 2/17;
+            grid-row: 12/16;
+        }
+        
+        .producto4{
+            grid-column:2/17;
+            grid-row: 17/21;
+        }
+        .producto5{
+            grid-column: 2/17;
+            grid-row: 22/26;
+        }
+        
+        .producto6{
+            grid-column: 2/17;
+            grid-row: 27/31;
+        }
+        
+        .producto7{
+            grid-column: 2/17;
+            grid-row: 32/36;
+        }
+        
+        .producto8{
+            grid-column: 2/17;
+            grid-row: 37/41;
+        }
+        
+        .producto9{
+            grid-column: 2/17;
+            grid-row: 42/46;
+        }
+        
+        .producto10{
+            grid-column: 2/17;
+            grid-row: 47/51;
+        }
+        
+        .producto11{
+            grid-column: 2/17;
+            grid-row: 52/56;
+        }
+        
+        .producto12{
+            grid-column: 2/17;
+            grid-row: 57/61;
+        }
+
+        .boton-comprar{
+            margin-left: 41%;
+            margin-top: 30px;
+            padding: 12px;
+        }
+    }
+
