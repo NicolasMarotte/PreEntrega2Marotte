@@ -1,0 +1,13 @@
+.galeria-img{
+    width: 100%;
+}
+
+.row{
+    display: flex;
+    gap: 0.5%;
+}
+
+.column{
+    flex: 25%;
+    gap: 0.5%;
+}

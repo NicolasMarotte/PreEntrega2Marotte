@@ -1,0 +1,190 @@
+    .contenedor{
+                width: 100%;
+                height: 200vh;
+                display: grid;
+                grid-template-columns: repeat(16,1fr);
+                grid-template-rows: repeat(64,1fr) ;
+            }
+            
+            .card-presentacion{
+                grid-row: 10/20;
+                grid-column: 4/11;
+                background-color: #05a3ea;
+                padding-left: 4.6rem;
+            
+            }
+            .totoro-presentacion{
+                display: flex;
+                grid-row: 3/21;
+                grid-column:2/6;  
+            }
+            
+            .titulo-presentacion{
+                color: #f0f8ff;
+                padding: 1rem;
+                padding-left: 1rem;
+            }
+            
+            .texto-presentacion{
+                color: #f0f8ff;
+                font-size: 1.1rem;
+                padding-left: 32px;
+            }
+            
+            .hayao-miyasaki{
+                grid-column: 9/16;
+                grid-row: 26/36;
+                background-color: #05a3ea;
+            }
+            
+            .hayao-foto{
+                grid-column: 7/9;
+                grid-row: 25/37;
+            }
+            
+            .titulo-hayao{
+                color: #f0f8ff;
+                padding: 1rem;
+                padding-left: 4rem;
+            }
+            
+            .texto-hayao{
+                color: #f0f8ff;
+                padding-left: 5rem;
+                font-size: 1.1rem;
+            }
+            
+            .clasicos{
+                grid-column: 5/13;
+                grid-row: 43/62;
+            }
+
+            @media screen and (max-width: 1500px){
+
+                .titulo-presentacion{
+                    padding-left: 2rem;
+                }
+
+                .texto-presentacion{
+                    padding-left: 2.5rem;
+                }
+
+                .titulo-hayao{
+                    padding-left: 6rem;
+                }
+                
+                .texto-hayao{
+                    padding-left: 6rem;
+            }
+        }
+
+            @media screen and (max-width: 1400px){
+
+                .card-presentacion{
+                    grid-row: 10/20;
+                    grid-column: 4/12;
+                }
+
+                .titulo-presentacion{
+                    padding-left: 3.5rem;
+                }
+
+                .texto-presentacion{
+                    padding-left: 4rem;
+                }
+
+                .hayao-foto{
+                    grid-column: 6/8;
+                    grid-row: 25/37;
+                }
+
+                .hayao-miyasaki{
+                    grid-column: 8/16;
+                    grid-row: 26/36;
+                }
+
+                .titulo-hayao{
+                    padding-left: 7.5rem;
+                }
+                
+                .texto-hayao{
+                    padding-left: 8rem;}
+            }
+
+            @media screen and (max-width: 1200px){
+                .card-presentacion{
+                    grid-row: 10/20;
+                    grid-column: 5/16;
+                    padding-left: 0px;
+                }
+
+                .totoro-presentacion{
+                    grid-row: 3/21;
+                    grid-column:1/4;  
+                }
+
+                .titulo-presentacion{
+                    padding-left: 1rem;
+                }
+                
+                .texto-presentacion{
+                    padding-left: 1rem;
+                }
+
+                .hayao-foto{
+                    grid-column: 12/14;
+                    grid-row: 25/36;
+                }
+
+                .hayao-miyasaki{
+                    grid-column: 2/11;
+                    grid-row: 26/37;
+                
+                }
+
+                .titulo-hayao{
+                    padding-left: 1rem;
+                }
+                
+                .texto-hayao{
+                    padding-left: 1rem;}
+            }
+
+            @media screen and (max-width: 1100px){
+                .card-presentacion{
+                    grid-row: 10/20;
+                    grid-column: 6/16;
+                }
+            }
+
+            @media screen and (max-width: 900px){
+                .card-presentacion{
+                    grid-row: 10/20;
+                    grid-column: 7/16;
+                }
+            }
+
+            @media screen and (max-width: 750px){
+                .card-presentacion{
+                    grid-row: 10/20;
+                    grid-column: 2/16;
+                
+                }
+                .totoro-presentacion{ 
+                    opacity: 0%;
+                }
+                
+                .hayao-miyasaki{
+                    grid-column: 2/16;
+                    grid-row: 26/36;
+                }
+                
+                .hayao-foto{
+                opacity: 0;
+                }
+
+                .clasicos{
+                    grid-column: 2/16;
+                    grid-row: 43/62;
+                }
+            }

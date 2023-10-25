@@ -1,0 +1,195 @@
+/* CARDS PELICULAS */
+
+
+.encabezado-peliculas {
+    margin: 10px;
+    padding: 10px;
+    background-color: #05a3ea;
+    color: #f0f8ff;
+}
+
+.pelis{
+    background-color: #05a3ea;
+}
+
+.pelis-imagen{
+    width: 100%;
+}
+
+.pelis-titulo{
+    font-size: 1.8rem;
+    color: #f0f8ff;
+    margin: 10px;
+}
+
+.pelis-sinopsis{
+    color: #f0f8ff;
+    padding: 10px;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 1rem;
+}
+
+.pelis-boton{
+    border: 0;
+    padding: 10px;
+    background-color: white;
+    font-family: 'Libre Baskerville', serif;
+}
+
+/* GRID PELICULAS */
+
+.contenedor-peliculas{
+    width: 100%;
+    height: 250vh;
+    display: grid;
+    grid-template-columns: repeat(16,1fr);
+    grid-template-rows: repeat(18,1fr) ;
+}
+
+.castillo{
+    grid-column: 2/6;
+    grid-row: 2/6;
+}
+
+.totoro{
+    grid-column: 7/11;
+    grid-row: 2/6;
+}
+
+.chihiro{
+    grid-column: 12/16;
+    grid-row: 2/6;
+}
+
+.ponyo{
+    grid-column: 2/6;
+    grid-row: 7/11;
+}
+
+.luciernagas{
+    grid-column: 7/11;
+    grid-row: 7/11;
+}
+
+.mononoke{
+    grid-column: 12/16;
+    grid-row: 7/11;
+}
+
+.kiki{
+    grid-column: 2/6;
+    grid-row: 12/16;
+}
+
+.gato{
+    grid-column: 7/11;
+    grid-row: 12/16;
+}
+
+.porco{
+    grid-column: 12/16;
+    grid-row: 12/16;
+}
+
+@media screen and (max-width:1000px) {
+
+    .contenedor-peliculas{
+        height: 300vh;
+    }
+        
+    .castillo{
+        grid-column: 2/8;
+        grid-row: 2/5;
+    }
+    
+    .totoro{
+        grid-column: 10/16;
+        grid-row: 2/5;
+    }
+    
+    .chihiro{
+        grid-column: 2/8;
+        grid-row: 6/10;
+    }
+    
+    .ponyo{
+        grid-column: 10/16;
+        grid-row: 6/10;
+    }
+    
+    .luciernagas{
+        grid-column: 2/8;
+        grid-row: 11/15;
+    }
+    
+    .mononoke{
+        grid-column: 10/16;
+        grid-row: 11/15;
+    }
+    
+    .kiki{
+        grid-column: 2/8;
+        grid-row: 16/18;
+    }
+    
+    .gato{
+        grid-column: 10/16;
+        grid-row: 16/19;
+    }
+    
+    .porco{
+        grid-column: 2/8;
+        grid-row: 16/19;
+    }
+}
+@media screen and (max-width:750px){
+    .contenedor-peliculas{
+        height: 750vh;
+        grid-template-rows: repeat(36,1fr) ;
+    }
+        
+    .castillo{
+        grid-column: 2/16;
+        grid-row: 2/5;
+    }
+    
+    .totoro{
+        grid-column: 2/16;
+        grid-row: 6/9;
+    }
+    
+    .chihiro{
+        grid-column: 2/16;
+        grid-row: 10/13;
+    }
+    
+    .ponyo{
+        grid-column: 2/16;
+        grid-row: 14/17;
+    }
+    
+    .luciernagas{
+        grid-column: 2/16;
+        grid-row: 18/21;
+    }
+    
+    .mononoke{
+        grid-column: 2/16;
+        grid-row: 22/25;
+    }
+    
+    .kiki{
+        grid-column: 2/16;
+        grid-row: 26/29;
+    }
+    
+    .gato{
+        grid-column: 2/16;
+        grid-row: 30/33;
+    }
+    
+    .porco{
+        grid-column: 2/16;
+        grid-row: 34/37;
+    }
+}

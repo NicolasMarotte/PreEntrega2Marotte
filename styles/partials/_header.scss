@@ -1,0 +1,56 @@
+.logo-menu{
+    font-size: 1.875rem;
+}
+
+.menu{
+    list-style-type: none;
+    background-color:#05a3ea;
+    padding-block: 30px;
+
+    .menu-header{
+        top: 0;
+        position: sticky;
+        width: 100%;
+        z-index: 1;
+    }
+    
+    .menu-item{
+        display: inline-block; 
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+    
+    .menu-item a{
+        color: #f0f8ff;
+        text-decoration: none;
+        font-family: 'Libre Baskerville', serif;
+
+        .menu-item a:hover{
+            text-decoration: underline;color: #f0f8ff;
+        }
+        
+    } 
+    
+    main{
+        padding: 10px;
+    }
+    
+    @media screen and (max-width: 1200px) {
+    
+        .menu{
+            display: flex;
+            justify-content: center;
+        }
+        .menu-item{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 10px;
+        }
+    
+    }
+}
+
+
+
+

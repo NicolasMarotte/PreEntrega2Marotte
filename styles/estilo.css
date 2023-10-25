@@ -1,0 +1,656 @@
+/*MENU*/
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+/*TEXTO DE LAS CARDS DE LAS PELICULAS*/
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.logo-menu {
+  font-size: 1.875rem;
+}
+
+.menu {
+  list-style-type: none;
+  background-color: #05a3ea;
+  padding-block: 30px;
+}
+.menu .menu-header {
+  top: 0;
+  position: sticky;
+  width: 100%;
+  z-index: 1;
+}
+.menu .menu-item {
+  display: inline-block;
+  margin-right: 40px;
+  margin-left: 40px;
+}
+.menu .menu-item a {
+  color: #f0f8ff;
+  text-decoration: none;
+  font-family: "Libre Baskerville", serif;
+}
+.menu .menu-item a .menu-item a:hover {
+  text-decoration: underline;
+  color: #f0f8ff;
+}
+.menu main {
+  padding: 10px;
+}
+@media screen and (max-width: 1200px) {
+  .menu .menu {
+    display: flex;
+    justify-content: center;
+  }
+  .menu .menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+}
+
+.contacto {
+  background-color: #05a3ea;
+  margin-top: auto;
+  padding: 10px;
+}
+
+.texto-contacto {
+  color: #f0f8ff;
+  text-decoration: none;
+}
+
+.contenedor {
+  width: 100%;
+  height: 200vh;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(64, 1fr);
+}
+
+.card-presentacion {
+  grid-row: 10/20;
+  grid-column: 4/11;
+  background-color: #05a3ea;
+  padding-left: 4.6rem;
+}
+
+.totoro-presentacion {
+  display: flex;
+  grid-row: 3/21;
+  grid-column: 2/6;
+}
+
+.titulo-presentacion {
+  color: #f0f8ff;
+  padding: 1rem;
+  padding-left: 1rem;
+}
+
+.texto-presentacion {
+  color: #f0f8ff;
+  font-size: 1.1rem;
+  padding-left: 32px;
+}
+
+.hayao-miyasaki {
+  grid-column: 9/16;
+  grid-row: 26/36;
+  background-color: #05a3ea;
+}
+
+.hayao-foto {
+  grid-column: 7/9;
+  grid-row: 25/37;
+}
+
+.titulo-hayao {
+  color: #f0f8ff;
+  padding: 1rem;
+  padding-left: 4rem;
+}
+
+.texto-hayao {
+  color: #f0f8ff;
+  padding-left: 5rem;
+  font-size: 1.1rem;
+}
+
+.clasicos {
+  grid-column: 5/13;
+  grid-row: 43/62;
+}
+
+@media screen and (max-width: 1500px) {
+  .titulo-presentacion {
+    padding-left: 2rem;
+  }
+  .texto-presentacion {
+    padding-left: 2.5rem;
+  }
+  .titulo-hayao {
+    padding-left: 6rem;
+  }
+  .texto-hayao {
+    padding-left: 6rem;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .card-presentacion {
+    grid-row: 10/20;
+    grid-column: 4/12;
+  }
+  .titulo-presentacion {
+    padding-left: 3.5rem;
+  }
+  .texto-presentacion {
+    padding-left: 4rem;
+  }
+  .hayao-foto {
+    grid-column: 6/8;
+    grid-row: 25/37;
+  }
+  .hayao-miyasaki {
+    grid-column: 8/16;
+    grid-row: 26/36;
+  }
+  .titulo-hayao {
+    padding-left: 7.5rem;
+  }
+  .texto-hayao {
+    padding-left: 8rem;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .card-presentacion {
+    grid-row: 10/20;
+    grid-column: 5/16;
+    padding-left: 0px;
+  }
+  .totoro-presentacion {
+    grid-row: 3/21;
+    grid-column: 1/4;
+  }
+  .titulo-presentacion {
+    padding-left: 1rem;
+  }
+  .texto-presentacion {
+    padding-left: 1rem;
+  }
+  .hayao-foto {
+    grid-column: 12/14;
+    grid-row: 25/36;
+  }
+  .hayao-miyasaki {
+    grid-column: 2/11;
+    grid-row: 26/37;
+  }
+  .titulo-hayao {
+    padding-left: 1rem;
+  }
+  .texto-hayao {
+    padding-left: 1rem;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .card-presentacion {
+    grid-row: 10/20;
+    grid-column: 6/16;
+  }
+}
+@media screen and (max-width: 900px) {
+  .card-presentacion {
+    grid-row: 10/20;
+    grid-column: 7/16;
+  }
+}
+@media screen and (max-width: 750px) {
+  .card-presentacion {
+    grid-row: 10/20;
+    grid-column: 2/16;
+  }
+  .totoro-presentacion {
+    opacity: 0%;
+  }
+  .hayao-miyasaki {
+    grid-column: 2/16;
+    grid-row: 26/36;
+  }
+  .hayao-foto {
+    opacity: 0;
+  }
+  .clasicos {
+    grid-column: 2/16;
+    grid-row: 43/62;
+  }
+}
+.contenedor-conoce-mas {
+  width: 100%;
+  height: 200vh;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+}
+.contenedor-conoce-mas .historia-estudio {
+  grid-column: 2/16;
+  background-color: #05a3ea;
+  margin-top: 50px;
+}
+.contenedor-conoce-mas .historia-estudio .titulo-historia {
+  color: #f0f8ff;
+  padding: 15px;
+}
+.contenedor-conoce-mas .historia-estudio .texto-historia {
+  color: #f0f8ff;
+  padding: 20px;
+  font-size: 1.3rem;
+}
+.contenedor-conoce-mas .historia-hayao {
+  grid-column: 2/16;
+  background-color: #05a3ea;
+  margin-top: 50px;
+}
+.contenedor-conoce-mas .historia-hayao .titulo-historia-hayao {
+  color: #f0f8ff;
+  padding: 15px;
+}
+.contenedor-conoce-mas .historia-hayao .texto-historia-hayao {
+  color: #f0f8ff;
+  padding: 20px;
+  font-size: 1.3rem;
+}
+
+.galeria-img {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  gap: 0.5%;
+}
+
+.column {
+  flex: 25%;
+  gap: 0.5%;
+}
+
+/* CARDS PELICULAS */
+.encabezado-peliculas {
+  margin: 10px;
+  padding: 10px;
+  background-color: #05a3ea;
+  color: #f0f8ff;
+}
+
+.pelis {
+  background-color: #05a3ea;
+}
+
+.pelis-imagen {
+  width: 100%;
+}
+
+.pelis-titulo {
+  font-size: 1.8rem;
+  color: #f0f8ff;
+  margin: 10px;
+}
+
+.pelis-sinopsis {
+  color: #f0f8ff;
+  padding: 10px;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 1rem;
+}
+
+.pelis-boton {
+  border: 0;
+  padding: 10px;
+  background-color: white;
+  font-family: "Libre Baskerville", serif;
+}
+
+/* GRID PELICULAS */
+.contenedor-peliculas {
+  width: 100%;
+  height: 250vh;
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(18, 1fr);
+}
+
+.castillo {
+  grid-column: 2/6;
+  grid-row: 2/6;
+}
+
+.totoro {
+  grid-column: 7/11;
+  grid-row: 2/6;
+}
+
+.chihiro {
+  grid-column: 12/16;
+  grid-row: 2/6;
+}
+
+.ponyo {
+  grid-column: 2/6;
+  grid-row: 7/11;
+}
+
+.luciernagas {
+  grid-column: 7/11;
+  grid-row: 7/11;
+}
+
+.mononoke {
+  grid-column: 12/16;
+  grid-row: 7/11;
+}
+
+.kiki {
+  grid-column: 2/6;
+  grid-row: 12/16;
+}
+
+.gato {
+  grid-column: 7/11;
+  grid-row: 12/16;
+}
+
+.porco {
+  grid-column: 12/16;
+  grid-row: 12/16;
+}
+
+@media screen and (max-width: 1000px) {
+  .contenedor-peliculas {
+    height: 300vh;
+  }
+  .castillo {
+    grid-column: 2/8;
+    grid-row: 2/5;
+  }
+  .totoro {
+    grid-column: 10/16;
+    grid-row: 2/5;
+  }
+  .chihiro {
+    grid-column: 2/8;
+    grid-row: 6/10;
+  }
+  .ponyo {
+    grid-column: 10/16;
+    grid-row: 6/10;
+  }
+  .luciernagas {
+    grid-column: 2/8;
+    grid-row: 11/15;
+  }
+  .mononoke {
+    grid-column: 10/16;
+    grid-row: 11/15;
+  }
+  .kiki {
+    grid-column: 2/8;
+    grid-row: 16/18;
+  }
+  .gato {
+    grid-column: 10/16;
+    grid-row: 16/19;
+  }
+  .porco {
+    grid-column: 2/8;
+    grid-row: 16/19;
+  }
+}
+@media screen and (max-width: 750px) {
+  .contenedor-peliculas {
+    height: 750vh;
+    grid-template-rows: repeat(36, 1fr);
+  }
+  .castillo {
+    grid-column: 2/16;
+    grid-row: 2/5;
+  }
+  .totoro {
+    grid-column: 2/16;
+    grid-row: 6/9;
+  }
+  .chihiro {
+    grid-column: 2/16;
+    grid-row: 10/13;
+  }
+  .ponyo {
+    grid-column: 2/16;
+    grid-row: 14/17;
+  }
+  .luciernagas {
+    grid-column: 2/16;
+    grid-row: 18/21;
+  }
+  .mononoke {
+    grid-column: 2/16;
+    grid-row: 22/25;
+  }
+  .kiki {
+    grid-column: 2/16;
+    grid-row: 26/29;
+  }
+  .gato {
+    grid-column: 2/16;
+    grid-row: 30/33;
+  }
+  .porco {
+    grid-column: 2/16;
+    grid-row: 34/37;
+  }
+}
+.contenedor-tienda {
+  width: 100%;
+  height: 250vh;
+  display: grid;
+  grid-template-columns: repeat(17, 1fr);
+  grid-template-rows: repeat(18, 1fr);
+}
+
+.productos {
+  background-color: #05a3ea;
+}
+
+.producto-imagen {
+  width: 100%;
+}
+
+.nombre-producto {
+  color: #f0f8ff;
+  display: flex;
+  justify-content: center;
+}
+
+.precio-producto {
+  color: #f0f8ff;
+  display: flex;
+  justify-content: center;
+}
+
+.boton-comprar {
+  margin-left: 38%;
+  padding: 12px;
+}
+
+.producto1 {
+  grid-column: 2/5;
+  grid-row: 2/6;
+}
+
+.producto2 {
+  grid-column: 6/9;
+  grid-row: 2/6;
+}
+
+.producto3 {
+  grid-column: 10/13;
+  grid-row: 2/6;
+}
+
+.producto4 {
+  grid-column: 14/17;
+  grid-row: 2/6;
+}
+
+.producto5 {
+  grid-column: 2/5;
+  grid-row: 7/11;
+}
+
+.producto6 {
+  grid-column: 6/9;
+  grid-row: 7/11;
+}
+
+.producto7 {
+  grid-column: 10/13;
+  grid-row: 7/11;
+}
+
+.producto8 {
+  grid-column: 14/17;
+  grid-row: 7/11;
+}
+
+.producto9 {
+  grid-column: 2/5;
+  grid-row: 12/16;
+}
+
+.producto10 {
+  grid-column: 6/9;
+  grid-row: 12/16;
+}
+
+.producto11 {
+  grid-column: 10/13;
+  grid-row: 12/16;
+}
+
+.producto12 {
+  grid-column: 14/17;
+  grid-row: 12/16;
+}
+
+@media screen and (max-width: 1070px) {
+  .producto1 {
+    grid-column: 2/6;
+    grid-row: 2/6;
+  }
+  .producto2 {
+    grid-column: 7/11;
+    grid-row: 2/6;
+  }
+  .producto3 {
+    grid-column: 12/16;
+    grid-row: 2/6;
+  }
+  .producto4 {
+    grid-column: 2/6;
+    grid-row: 7/10;
+  }
+  .producto5 {
+    grid-column: 7/11;
+    grid-row: 7/10;
+  }
+  .producto6 {
+    grid-column: 12/16;
+    grid-row: 7/11;
+  }
+  .producto7 {
+    grid-column: 2/6;
+    grid-row: 7/11;
+  }
+  .producto8 {
+    grid-column: 7/11;
+    grid-row: 7/11;
+  }
+  .producto9 {
+    grid-column: 12/16;
+    grid-row: 12/16;
+  }
+  .producto10 {
+    grid-column: 2/6;
+    grid-row: 12/16;
+  }
+  .producto11 {
+    grid-column: 7/11;
+    grid-row: 12/16;
+  }
+  .producto12 {
+    grid-column: 12/16;
+    grid-row: 12/16;
+  }
+}
+@media screen and (max-width: 700px) {
+  .contenedor-tienda {
+    grid-template-columns: repeat(17, 1fr);
+    grid-template-rows: repeat(64, 1fr);
+    height: 1400vh;
+  }
+  .producto1 {
+    grid-column: 2/17;
+    grid-row: 2/6;
+  }
+  .producto2 {
+    grid-column: 2/17;
+    grid-row: 7/11;
+  }
+  .producto3 {
+    grid-column: 2/17;
+    grid-row: 12/16;
+  }
+  .producto4 {
+    grid-column: 2/17;
+    grid-row: 17/21;
+  }
+  .producto5 {
+    grid-column: 2/17;
+    grid-row: 22/26;
+  }
+  .producto6 {
+    grid-column: 2/17;
+    grid-row: 27/31;
+  }
+  .producto7 {
+    grid-column: 2/17;
+    grid-row: 32/36;
+  }
+  .producto8 {
+    grid-column: 2/17;
+    grid-row: 37/41;
+  }
+  .producto9 {
+    grid-column: 2/17;
+    grid-row: 42/46;
+  }
+  .producto10 {
+    grid-column: 2/17;
+    grid-row: 47/51;
+  }
+  .producto11 {
+    grid-column: 2/17;
+    grid-row: 52/56;
+  }
+  .producto12 {
+    grid-column: 2/17;
+    grid-row: 57/61;
+  }
+  .boton-comprar {
+    margin-left: 41%;
+    margin-top: 30px;
+    padding: 12px;
+  }
+}/*# sourceMappingURL=estilo.css.map */
