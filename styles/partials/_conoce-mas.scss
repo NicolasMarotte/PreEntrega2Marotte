@@ -38,7 +38,22 @@
             font-size: 1.3rem;
         }
     }
+
+    .texto-historia-hayao{
+        animation-name: moviento1;
+        animation-duration:3s;
+    }
+
+    .texto-historia{
+        animation-name: moviento1;
+        animation-duration:3s;
+    }
     
+    @keyframes moviento1 {
+        0%{
+            color: #05a3ea;
+        }
+    }
     
 }
 

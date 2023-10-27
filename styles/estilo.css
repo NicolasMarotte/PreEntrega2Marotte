@@ -85,6 +85,10 @@
   grid-column: 2/6;
 }
 
+.totoro-presentacion:hover {
+  transform: rotate(3deg);
+}
+
 .titulo-presentacion {
   color: #f0f8ff;
   padding: 1rem;
@@ -108,6 +112,10 @@
   grid-row: 25/37;
 }
 
+.hayao-foto:hover {
+  transform: rotate(-3deg);
+}
+
 .titulo-hayao {
   color: #f0f8ff;
   padding: 1rem;
@@ -123,6 +131,10 @@
 .clasicos {
   grid-column: 5/13;
   grid-row: 43/62;
+}
+
+.clasicos:hover {
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 1500px) {
@@ -262,6 +274,19 @@
   color: #f0f8ff;
   padding: 20px;
   font-size: 1.3rem;
+}
+.contenedor-conoce-mas .texto-historia-hayao {
+  animation-name: moviento1;
+  animation-duration: 3s;
+}
+.contenedor-conoce-mas .texto-historia {
+  animation-name: moviento1;
+  animation-duration: 3s;
+}
+@keyframes moviento1 {
+  0% {
+    color: #05a3ea;
+  }
 }
 
 .galeria-img {
